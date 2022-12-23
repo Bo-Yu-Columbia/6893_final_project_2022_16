@@ -30,7 +30,7 @@ R = Ratings.as_matrix()
 user_ratings_mean = np.mean(R, axis = 1)
 Ratings_demeaned = R - user_ratings_mean.reshape(-1, 1)
 
-#Model-Based Collaborative Filtering¶ -SVD
+#Model-Based Collaborative Filtering-SVD
 
 sparsity = round(1.0 - len(ratings) / float(num_users * num_movies), 3)
 print 'The sparsity level of MovieLens1M dataset is ' +  str(sparsity * 100) + '%'
