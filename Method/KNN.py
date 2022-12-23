@@ -1,17 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 import pandas as pd
 from scipy.sparse import csr_matrix
 from sklearn.neighbors import NearestNeighbors
 from fuzzywuzzy import process
-
-
-# In[ ]:
-
 
 user_url=r"https://drive.google.com/file/d/155oakHcdg3UWi9I-mKI4FWNGZM0G1knS/view?usp=share_link"
 mov_url=r"https://drive.google.com/file/d/1jFVDbi43OkinguO6URYlRf41nTbhRx6W/view?usp=share_link"
@@ -20,9 +13,6 @@ movcol=['movieId','title']
 df_movies = pd.read_csv(mov_url,names=movcol,sep='|',encoding='latin-1', usecols=['movieId', 'title'],
             dtype={'movieId': 'int32', 'title': 'str'})
 df_movies.head()
-
-
-# In[ ]:
 
 
 usercol=['userId','movieId','rating']
