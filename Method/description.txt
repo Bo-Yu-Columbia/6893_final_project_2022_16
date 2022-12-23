@@ -1,0 +1,1 @@
+Please find u.data and u.item file from the google drive shared in the code, and the rating file is too large to upload to this github folder. so please find the link for download this rating file along with the u.item and u.data file from the google drive
